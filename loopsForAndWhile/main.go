@@ -13,6 +13,7 @@ func while(value int) {
 	fmt.Printf("But will exit on the 10th time\n")
 	
 	// Go does not have the while keyword
+	// Based on condition
 	i := 1
 	for i < value {
 		if i == 5 {
@@ -29,6 +30,11 @@ func while(value int) {
 	}
 }
 
+// So, that's how you declare an array!
+func takeAnArray(arr []int) []int {
+	return arr
+}
+
 func main() {
 	
 	// Classic for-loop
@@ -40,8 +46,6 @@ func main() {
 	value := 11
 	while(value)
 	
-	// idk types of data yet; i cannot strictly define the data type "array" for a func 🤷‍♂️
-	// Anyhoo
 	// Looping over an iterable like an Array
 	arr := []int{-1, 2, 3}
 	for i := 0; i < 2; i++ {
@@ -51,6 +55,8 @@ func main() {
 		}
 	}
 	
+	
+	// while loop based on True and False condition
 	var keepGoing = true
 	answer := ""
 	for keepGoing {
